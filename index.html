@@ -8,8 +8,8 @@
     BODY {
   align-items: center;
   justify-content: center;
-  background: #4242f4;
-  font-family: 'Baskerville Old Face';
+  background: white;
+  font-family: Georgia;
   }
 
 H1 {
@@ -26,31 +26,25 @@ H1 {
     }
   {
    </style>
-  <script>
-function func(){
-var n;
-var m;
-n=document.getElementById("n_znach").value;
-m=document.getElementById("m_znach").value;
-n=n+m;
-document.getElementById("a").innerHTML ="<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
+ <script> 
+ function func1(){ 
+ var a;
+ a=Number(document.getElementById("a_znach").value);
+ var b=(a-(a%10))/10
+ document.getElementById("kont_a").innerHTML ="<h1>"+"десятки"+"<br>"+ b+"</h1>";
+ var c=a%10
+ document.getElementById("kont_a").innerHTML = document.getElementById("kont_a").innerHTML + "<h1>"+"единицы"+"<br>"+ c+"</h1>";
+ document.getElementById("kont_a").innerHTML = document.getElementById("kont_a").innerHTML + "<h1>"+"единицы"+"<br>"+ (c+b)+"</h1>";
+ document.getElementById("kont_a").innerHTML = document.getElementById("kont_a").innerHTML + "<h1>"+"единицы"+"<br>"+ (c*b)+"</h1>";
+ 
+ }
 
-n=Number(document.getElementById("n_znach").value);
-m=Number(document.getElementById("m_znach").value);
-n=n+m;
-document.getElementById("a").innerHTML = document.getElementById("a").innerHTML + "<h1>"+"пищеварительная система брюхоногих моллюсков "+"<br>"+ n+"</h1>";
-}
-</script>
-  </head>
-  <body>
-    <h1>Григорий,заводи,смэрт шкiле</h1>
-    n=<input type="text" value="0" id="n_znach">
-    m=<input type="text" value="0" id="m_znach">
-<br>
-<br>
-<button onclick="func()">Нажми на меня</button>
-<br>
-<br>
-<div id="a"></div>
-  </body>
-</html>
+ </script>
+ </head>
+ <body>
+  <h1>Задача 2.10</h1>
+ двузначное число a=<input type="text" value="67" id="a_znach">
+  <button onclick="func1()">1.25</button>
+  <div id="kont_a"></div>
+</body> 
+ </html>
