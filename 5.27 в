@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    
+     function func4() { 
+b = Number(document.getElementById("b_f4_znach").value); 
+var i = -10 
+while(i<= b){ 
+document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + i + " "; 
+i++}} 
+    function func3() {
+       document.getElementById("otvet3").innerHTML ="";
+      var a = Number(document.getElementById("a_f3_znach").value);
+      var b = Number(document.getElementById("b_f3_znach").value);
+     var x=b-a+1;
+     var sum=0;
+      var i =0; 
+
+      while (a <= b) {
+        sum=sum+a;
+
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + a + " " +sum +"<br>" ;
+        a++;
+      }
+       document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML  +sum/x +"<br>" ;
+       
+      
+       
+      document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + a +" "+sum + "<br> "; 
+      i++; 
+      a++; 
+ 
+    }
+
+     function func4() {
+       document.getElementById("otvet4").innerHTML ="";
+      var a = Number(document.getElementById("a_f4_znach").value);
+      var b = Number(document.getElementById("b_f4_znach").value);
+     var sum=0;
+      while (a <= b) {
+        sum=sum+a*a;
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + a + " " +sum +"<br>" ;
+        a++;
+        
+      }
+       
+    }
+    
+function func5() { 
+document.getElementById("otvet5").innerHTML = ""; 
+a = Number(document.getElementById("a_f5_znach").value); 
+b = Number(document.getElementById("b_f5_znach").value); 
+var s = 0 
+var i =0; 
+
+while (a <= b){ 
+s=s+a; 
+document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML + a +" "+s + "<br> "; 
+i++; 
+a++; 
+} 
+function func6() { 
+
+var i = i 
+while(i!= 0){
+
+ i= prompt('Введите n', 69);
+
+document.getElementById("otvet6").innerHTML = document.getElementById("otvet6").innerHTML + i + " "; 
+}} 
+    
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл while!</h1> a=
+  <input type="text" value="1" id="a_f1_znach">
+  </h1> b=
+  <input type="text" value="10" id="b_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+<br>
+   <h1>Цикл while!</h1> a=
+  <input type="text" value="1" id="a_f2_znach">
+  </h1> b=
+  <input type="text" value="10" id="b_f2_znach">
+  <a href="#" onclick="func2()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet2"></div>
+<br>
+ <h1>Цикл while!</h1> a=
+  <input type="text" value="1" id="a_f3_znach">
+  </h1> b=
+  <input type="text" value="10" id="b_f3_znach">
+  <a href="#" onclick="func3()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet3"></div>
+<br>
+<h1>Цикл while!</h1> a=
+  <input type="text" value="1" id="a_f4_znach">
+  </h1> b=
+  <input type="text" value="10" id="b_f4_znach">
+  <a href="#" onclick="func4()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet4"></div>
+<br>
+<h1>Цикл while!</h1> a=
+  <input type="text" value="1" id="a_f5_znach">
+  </h1> b=
+  <input type="text" value="10" id="b_f5_znach">
+  <a href="#" onclick="func5()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet5"></div>
+<br>
+<h1>Цикл while!</h1> a=
+  <input type="text" value="1" id="a_f5_znach">
+  </h1> b=
+  <input type="text" value="10" id="b_f5_znach">
+  <a href="#" onclick="func5()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet5"></div>
+<br>
+<h1>Цикл while!</h1> a=
+  <input type="text" value="1" id="a_f6_znach">
+  </h1> b=
+  <input type="text" value="10" id="b_f6_znach">
+  <a href="#" onclick="func6()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet6"></div>
+<br>
+  
+  <br>
+  <br>
+  <br>
+</body>
+</html>
